@@ -1,0 +1,97 @@
+<!--Made By Bernardo Carvalheiro
+Para Programação Web. Desenvolvimento de página web com uso de HTML, CSS e JS-->
+
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacte-nos</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="shortcut icon" href="Assets/server_made.png" type="image/x-icon">
+    <script src="script.js"></script>
+</head>
+<body>
+    <header>
+        <h1 class="visually-hidden">Server Made</h1>
+        <nav>
+            <a href="index.html"><img class="home-btn" src="Assets/server_made.png" alt=""></a>
+            <div class="nav-btns">
+                <a class="nav-btn" href="contactos.html">Contactos</a>
+                <a class="nav-btn" href="produtos.html">Produtos</a>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <div class="contact-container">
+            <aside class="store-info">
+                <h3>INFORMAÇÃO DA LOJA</h3>
+                <p>
+                    Server Made<br>
+                    Morada:
+                    Rua do Sonic<br>
+                    nº17 <br>
+                    2800-123<br>
+                    Mushroom Planet<br>
+                </p>
+                <hr>
+                <p>
+                    <span class="icon-imoji"">📞</span> Contacte-nos:<br>
+                    <a href="tel:112 122 122 122" style="color:#1870FE;">112 122 122 122</a>
+                </p>
+                <hr>
+                <p>
+                    <span class="icon-imoji">✉️</span> Envie-nos um e-mail:<br>
+                    <a href="mailto:amongus@gmail.com" style="color:#1870FE;">amongus@gmail.com</a>
+                </p>
+            </aside>
+
+
+            <section class="contact-form-section">
+                <form action="" method="" class="contact-form">
+                    <h2>Contacte-nos</h2>
+
+                    <div class="form-group">
+                        <label for="nome">Nome</label>
+                        <input type="text" name="nome" id="nome" placeholder="Nome completo" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="assunto">Assunto</label>
+                        <select id="assunto" name="assunto" required aria-label>
+                            <option value="" disabled selected>Selecione um assunto</option>
+                            <option value="suporte">Suporte Técnico</option>
+                            <option value="vendas">Vendas</option>
+                            <option value="feedback">Feedback</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="email">Endereço de email</label>
+                        <input type="email" id="email" name="email" placeholder="o_seu@email.com" required>
+                    </div>
+                    
+                    <label for="anexo">Anexo</label>
+                    <div class="file-row">
+                        <input type="file" id="anexo" name="anexo">
+                        <span class="file-optional">opcional</span>
+                    </div>
+
+                    <label for="message">Mensagem</label>
+                    <textarea id="mensagem" name="mensagem" rows="4" placeholder="Como podemos ajudar?" required></textarea>
+
+                    <button type="submit">Enviar</button>
+                </form>
+            </section>
+        </div>
+    </main>
+
+    <br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+    
+    <footer>
+        <img class="flags" src="Assets/Flag_of_Portugal.svg.webp" alt="">
+        <p>&copy; 2025 Server Made. Todos os direitos reservados.</p>
+    </footer>
+</body>
+</html>

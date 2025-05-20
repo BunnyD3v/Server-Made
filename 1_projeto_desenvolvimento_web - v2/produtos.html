@@ -1,0 +1,51 @@
+<!--Made By Bernardo Carvalheiro
+Para Programação Web. Desenvolvimento de página web com uso de HTML, CSS e JS-->
+
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacte-nos</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="shortcut icon" href="Assets/server_made.png" type="image/x-icon">
+    <script src="script.js"></script>
+</head>
+<body>
+    <header>
+        <h1 class="visually-hidden">Server Made</h1>
+        <nav>
+            <a href="index.html"><img class="home-btn" src="Assets/server_made.png" alt=""></a>
+            <div class="nav-btns">
+                <a class="nav-btn" href="contactos.html">Contactos</a>
+                <a class="nav-btn" href="produtos.html">Produtos</a>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="produtos-section">
+            <h2>Produtos</h2>
+           
+            <form id="produto-form">
+                <input type="hidden" id="produto-id">
+                <input type="text" id="produto-nome" placeholder="Nome do produto" required>
+                <input type="text" id="produto-desc" placeholder="Descrição" required>
+                <input type="file" id="produto-img" accept="image/*">
+                <img id="preview-img" src="" alt="" style="max-width:100px; display:none; margin:10px 0;">
+                <button type="submit">Guardar</button>
+            </form>
+
+            <ul id="produtos-list"></ul>
+    </main>
+
+    <br><br><br><br><br><br><br><br><br><br><br><br><br>
+    <br><br><br><br><br><br><br><br><br><br><br><br><br>
+    <br><br><br><br><br><br><br><br><br><br><br><br><br>
+    
+    <footer>
+        <img class="flags" src="Assets/Flag_of_Portugal.svg.webp" alt="">
+        <p>&copy; 2025 Server Made. Todos os direitos reservados.</p>
+    </footer>
+</body>
+</html>
